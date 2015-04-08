@@ -4,18 +4,12 @@ import java.awt.FlowLayout;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-public class MyFrameB extends JFrame
+public class MyFrameB extends MyFrameA
 {
 
 	FlowLayout layout = new FlowLayout();
 
 	private String[] lables;
-	private int title;
-
-	public void setTitle(int title)
-	{
-		setTitle("" + title);
-	}
 
 	public void setLabels(String[] lables)
 	{
@@ -30,10 +24,8 @@ public class MyFrameB extends JFrame
 
 	public MyFrameB(int x, String lables[])
 	{
-		this.title = x;
+		super(x);
 		this.lables = lables;
-		setTitle(this.title);
-		setSize(200, 200);
 		setLabels(this.lables);
 	}
 

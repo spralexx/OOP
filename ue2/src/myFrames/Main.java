@@ -16,9 +16,7 @@ public class Main
 		{
 			evenNumbersTo100[counter++] = i;
 		}
-
-		MyFrameC myCFrame = new MyFrameC("testZahlen", 300, evenNumbersTo100);
-
+		MyFrameC myCFrame = new MyFrameC("Zahlen", 300, evenNumbersTo100);
 		myAFrame.setVisible(true);
 		myBFrame.setVisible(true);
 		myCFrame.setVisible(true);
